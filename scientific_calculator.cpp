@@ -4,10 +4,6 @@ using namespace std;
 
 class Calculator
 {
-protected:
-    float num1, num2;
-    int op;
-
 public:
     Calculator(){};
     void Cal(float n1, float n2, int optr)
@@ -36,9 +32,7 @@ public:
 class Scientific_Calc : public Calculator
 {
 protected:
-    float x;
     float result;
-
 public:
     Scientific_Calc(){};
     void Calc(float theta, int func)
@@ -129,7 +123,7 @@ int main()
             cin >> num1;
             cout << "Enter the Second Number: " << endl;
             cin >> num2;
-            c1.Cal(num1,num2,func);
+            c1.Cal(num1, num2, func);
         }
         else
         {
